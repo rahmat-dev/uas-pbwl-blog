@@ -40,8 +40,8 @@ class CategoryController extends Controller
       'name' => 'required',
       'text' => 'required',
     ], [
-      'name' => 'Nama kategori harus diisi',
-      'text' => 'Keterangan  harus diisi',
+      'name.required' => 'Nama kategori harus diisi',
+      'text.required' => 'Keterangan  harus diisi',
     ]);
 
     Category::create($validatedData);
@@ -83,8 +83,8 @@ class CategoryController extends Controller
       'name' => 'required',
       'text' => 'required',
     ], [
-      'name' => 'Nama kategori harus diisi',
-      'text' => 'Keterangan  harus diisi',
+      'name.required' => 'Nama kategori harus diisi',
+      'text.required' => 'Keterangan  harus diisi',
     ]);
 
     $category->update($validatedData);

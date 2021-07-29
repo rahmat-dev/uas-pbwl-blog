@@ -11,7 +11,7 @@
     </ul>
   </div>
   @endif
-  <a href="{{url()->previous()}}" class="d-block mb-3">&larr; Kembali</a>
+  <a href="{{route('category.index')}}" class="d-block mb-3">&larr; Kembali</a>
   <form method="POST" action="{{route('category.store')}}">
     @csrf
     <div class="mb-3">
