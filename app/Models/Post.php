@@ -15,4 +15,9 @@ class Post extends Model
   {
     return $this->belongsTo(Category::class, 'cat_id', 'id');
   }
+
+  public function photo()
+  {
+    return $this->hasOne(Photo::class, 'post_id');
+  }
 }
